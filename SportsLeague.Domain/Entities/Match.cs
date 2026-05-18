@@ -26,5 +26,8 @@ namespace SportsLeague.Domain.Entities
         public ICollection<Goal> Goals { get; set; } = new List<Goal>();
         public ICollection<Card> Cards { get; set; } = new List<Card>();
 
+        // Relación 1:N con la alineación
+        public ICollection<MatchLineup> MatchLineups { get; set; } = new List<MatchLineup>();
+
     }
 }
